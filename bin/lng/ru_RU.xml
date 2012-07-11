@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language locale="ru_RU">
+
+	<!--LOG MESSAGES-->
+	
+	<XML_READ_ERROR><![CDATA[Невозможно прочесть XML "%1"]]></XML_READ_ERROR>
+	<LOCATION_TO_FRAME><![CDATA[ - <b>%1</b>]]></LOCATION_TO_FRAME>
+	<LOCATION_ELEMENT_WITH_INSTANCE><![CDATA["<b>%1</b>" с Instance name: "<b>%2</b>" в: "<b>%3</b>", на слое: "<b>%4</b>", на кадре номер: <b>%5</b>]]></LOCATION_ELEMENT_WITH_INSTANCE>
+	<LOCATION_ELEMENT_WITHOUT_INSTANCE><![CDATA["<b>%1</b>" в: "<b>%2</b>", на слое: "<b>%3</b>", на кадре номер: <b>%4</b>]]></LOCATION_ELEMENT_WITHOUT_INSTANCE>
+	<LOCATION_NOT_A_SYMBOL>
+		<![CDATA["<b>%1</b>" в: "<b>%2</b>", на слое: "<b>%3</b>", на кадре номер: <b>%4</b>]]>
+	</LOCATION_NOT_A_SYMBOL>
+	<LOCATION_AT_FRAME>
+		<![CDATA[В: "<b>%1</b>", на слое: "<b>%2</b>", на кадре номер: <b>%3</b>]]>
+	</LOCATION_AT_FRAME>
+	<LOCATION_AT_LAYER><![CDATA[В: "<b>%1</b>", слой: "<b>%2</b>"]]></LOCATION_AT_LAYER>
+	<FONT_NO_EMBEDDED_CHARS><![CDATA[Шрифт <b>%1</b> не имеет встроенных символов!]]></FONT_NO_EMBEDDED_CHARS>
+	<NOT_EMBEDDED_FONT><![CDATA[Найдено текстовое поле с <b><u>невстроенным шрифтом</u></b> "<b>%1</b>"<br>%2]]></NOT_EMBEDDED_FONT>
+	<NOT_EMBEDDED_TLF_FONT><![CDATA[Найдено TLF текстовое поле с хотя бы одним <b><u>невстроенным шрифтом</u></b><br>%1]]></NOT_EMBEDDED_TLF_FONT>
+	<SYSTEM_FONT><![CDATA[Найдено текстовое поле с <b><u>системным шрифтом</u></b> "<b>%1</b>"<br>%2]]></SYSTEM_FONT>
+	<SYSTEM_TLF_FONT><![CDATA[Найдено TLF текстовое поле с хотя бы одним <b><u>системным шрифтом</u></b><br>%1]]></SYSTEM_TLF_FONT>
+	<LIBRARY_SCAN_STARTED><![CDATA[Сканирование библиотеки запущено...]]></LIBRARY_SCAN_STARTED>
+	<LIBRARY_SCAN_FINISHED><![CDATA[Сканирование библиотеки завершено, просканировано элементов: <b>%1</b>]]></LIBRARY_SCAN_FINISHED>
+	<FILE_NOT_FOUND><![CDATA[Файл "%1" не найден!]]></FILE_NOT_FOUND>
+	<FLASH_PRO_NOT_FOUND><![CDATA[<b>Adobe Flash Professional</b> не найден! Пожалуйста, убедитесь, что Вы верно указали путь до Flash Pro на странице <b>Опции</b>]]></FLASH_PRO_NOT_FOUND>
+	<NATIVE_NOT_SUPPORTED><![CDATA[<b>NativeProcess</b> не поддерживается! :(]]></NATIVE_NOT_SUPPORTED>
+	<FONT_EMBED_ISSUES_FOUND><![CDATA[Всего проблем со <b>шрифтами</b>: %1]]></FONT_EMBED_ISSUES_FOUND>
+	<FONT_EMBED_SCAN_SKIPPED><![CDATA[Сканирование проблем со <b>шрифтами</b> пропущено]]></FONT_EMBED_SCAN_SKIPPED>
+	<COMMON_ISSUES_FOUND><![CDATA[Всего <b>общих</b> проблем: %1]]></COMMON_ISSUES_FOUND>
+	<COMMON_SCAN_SKIPPED><![CDATA[Сканирование <b>общих</b> проблем пропущено]]></COMMON_SCAN_SKIPPED>
+	<PERFORMANCE_ISSUES_FOUND><![CDATA[Всего проблем с <b>производительностью</b>: %1]]></PERFORMANCE_ISSUES_FOUND>
+	<PERFORMANCE_SCAN_SKIPPED><![CDATA[Сканирование проблем с <b>производительностью</b> пропущено]]></PERFORMANCE_SCAN_SKIPPED>
+	<ELEGANCY_ISSUES_FOUND><![CDATA[Всего проблем с <b>опрятностью</b>: %1]]></ELEGANCY_ISSUES_FOUND>
+	<ELEGANCY_SCAN_SKIPPED><![CDATA[Сканирование проблем с <b>опрятностью</b> пропущено]]></ELEGANCY_SCAN_SKIPPED>
+	<BLEND_MODE_FOUND><![CDATA[Найден элемент с <b><u>Blending</u></b><br>%1]]></BLEND_MODE_FOUND>
+	<VISIBLE_OFF_FOUND><![CDATA[Найден возможно <b><u>неиспользуемый</u></b> элемент<br>%1]]></VISIBLE_OFF_FOUND>
+	<CACHED_WITH_TRANSFORM_FOUND><![CDATA[Найден кэшируемый элемент, который имеет анимированный <b><u>Transform</u></b><br>%1]]></CACHED_WITH_TRANSFORM_FOUND>
+	<CACHED_WITH_COLOR_EFFECT_FOUND><![CDATA[Найден кэшируемый элемент, который имеет анимированный <b><u>Color Effect</u></b><br>%1]]></CACHED_WITH_COLOR_EFFECT_FOUND>
+	<FILTER_CHANGING_FOUND><![CDATA[Найден элемент с анимированными <b><u>свойствами фильтра(ов)</u></b><br>%1]]></FILTER_CHANGING_FOUND>
+	<CACHE_OR_EXPORT_FOR_BITMAP_FOUND><![CDATA[Найден элемент с включенным <b><u>Cache as Bitmap/Export as Bitmap</u></b> и содержащий лишь одни изображения<br>%1]]></CACHE_OR_EXPORT_FOR_BITMAP_FOUND>
+	<CACHED_ANIMATION_FOUND><![CDATA[Найден кэшируемый элемент с вложенной анимацией<br>%1]]></CACHED_ANIMATION_FOUND>
+	<EXPORTED_ANIMATION_FOUND><![CDATA[Найден элемент с включенным <b><u>Export as Bitmap</u></b> и содержащий анимацию <br>%1]]></EXPORTED_ANIMATION_FOUND>
+	<PUBLISH_SETTINGS_SCAN_STARTED><![CDATA[Сканирование проблем в Publish Settings запущено...]]></PUBLISH_SETTINGS_SCAN_STARTED>
+	<WARNINGS_IN_PUBLISH><![CDATA[<b>Warnings mode</b> в "Publish Settings -> ActionScript Settings" включен]]></WARNINGS_IN_PUBLISH>
+	<COMPRESS_IN_PUBLISH><![CDATA[<b>Compress movie</b> в "Publish Settings" отключен]]></COMPRESS_IN_PUBLISH>
+	<XMP_IN_PUBLISH><![CDATA[<b>Include XMP metadata</b> в "Publish Settings" включен, однако metadata либо пустая, либо заполнена не полностью]]></XMP_IN_PUBLISH>
+	<PUBLISH_FOUND><![CDATA[Всего проблем с <b>Publish Settings</b>: %1]]></PUBLISH_FOUND>
+	<PUBLISH_FINISHED><![CDATA[Сканирование проблем в <b>Publish Settings</b> завершено...]]></PUBLISH_FINISHED>
+	<PUBLISH_SKIPPED><![CDATA[Сканирование проблем в <b>Publish Settings</b> пропущено...]]></PUBLISH_SKIPPED>
+	<COMPRESS_READING><![CDATA[Получение списка медиа элементов...]]></COMPRESS_READING>
+	<COMPRESS_PREPARING><![CDATA[Подготовка к запуску JSFL...]]></COMPRESS_PREPARING>
+	<COMPRESS_CALL_IDE><![CDATA[Вызываем Flash Professional IDE...]]></COMPRESS_CALL_IDE>
+	<COMPRESS_NEED_SPACE><![CDATA[Простите, но для продолжения требуется больше свободного места тут: %1. Еще надо байт: %2]]></COMPRESS_NEED_SPACE>
+	<COMPRESS_SKIP><![CDATA[Пропуск изображения "%1" с пользовательским качеством сжатия JPEG: %2]]></COMPRESS_SKIP>
+	<COMPRESS_TERMINATED><![CDATA[Прервано пользователем]]></COMPRESS_TERMINATED>
+	<COMPRESS_WAITING><![CDATA[Ожидание завершения JSFL для правильной очистки...]]></COMPRESS_WAITING>
+	<COMPRESS_EXPORTED_START><![CDATA[Начало анализа выгруженных изображений...]]></COMPRESS_EXPORTED_START>
+	<LOG_IMAGES_ANALYSED><![CDATA[Всего изображений: %1; подсказок: %2]]></LOG_IMAGES_ANALYSED>
+	<COMPRESS_ERROR><![CDATA[Случился какой-то неприятный IOError при загрузке: %1<br>Сообщение об ошибке: %2]]></COMPRESS_ERROR>
+	<COMPRESS_PICK_LOSSLLESS><![CDATA[Изображение "%3": <u>%1 (Lossless)</u> / %2 (Photo)<br>рекомендуется сжатие <b>Lossless (PNG/GIF)</b>]]></COMPRESS_PICK_LOSSLLESS>
+	<COMPRESS_PICK_PHOTO><![CDATA[Изображение "%3": %1 (Lossless) / <u>%2 (Photo)</u><br>рекомендуется сжатие <b>Photo (JPEG) с выбранным качеством</b>]]></COMPRESS_PICK_PHOTO>
+	<COMPRESS_IMPORTED_JPEG_DATA><![CDATA[Изображение "%1"<br> не пережимается (задействован режим сжатия "Use imported JPEG data")) при компиляции. Удостоверьтесь, что баланс размер файла/качество Вас устраивает.]]></COMPRESS_IMPORTED_JPEG_DATA>
+	<COMPRESS_SIZE><![CDATA[ КБ]]></COMPRESS_SIZE>
+	<LOG_HINT><![CDATA[<u><b>ВАЖНО:</b></u> ]]></LOG_HINT>
+	<LOG_COPIED><![CDATA[Лог скопирован в буфер обмена]]></LOG_COPIED>
+	<LOG_WAIT><![CDATA[Пожалуйста, подождите...]]></LOG_WAIT>
+	<LOG_TIME><![CDATA[Время обработки: %1 сек]]></LOG_TIME>
+	<LOG_TOTAL_ISSUES><![CDATA[<b>Всего проблем: %1</b>]]></LOG_TOTAL_ISSUES>
+	<LOG_LIBRARY_SCAN_SKIPPED><![CDATA[Сканирование всех проблем библиотеки пропущено]]></LOG_LIBRARY_SCAN_SKIPPED>
+	<LOG_NOTHING_TO_SCAN><![CDATA[Пожалуйста, укажите хотя бы один пункт для сканирования в "Настройках сканирования"]]></LOG_NOTHING_TO_SCAN>
+	<LOG_UNPACKING_COMPRESSED_XFL><![CDATA[Распаковка сжатого XFL проекта ...]]></LOG_UNPACKING_COMPRESSED_XFL>
+	<LOG_DELETING_UNPACKED_XFL><![CDATA[Удаление распакованного XFL проекта ...]]></LOG_DELETING_UNPACKED_XFL>
+	<LOG_NO_BITMAPS><![CDATA[В проекте не содержится изображений!]]></LOG_NO_BITMAPS>
+	<LOG_MASKED_BITMAP><![CDATA[Найдено изображение под маской<br>%1]]></LOG_MASKED_BITMAP>
+	<LOG_TWEENED_KEYFRAME><![CDATA[Найден одиночный ключевой кадр c примененным Tween'ом<br>%1]]></LOG_TWEENED_KEYFRAME>
+	<LOG_LAYER_LENGTH><![CDATA[Найдена временная шкала с разной длиной слоев у символа<br>"<b>%1</b>"]]></LOG_LAYER_LENGTH>
+	<LOG_SHAPE_WITH_STROKE><![CDATA[Найден <b>Shape с обводкой</b><br>%1]]></LOG_SHAPE_WITH_STROKE>
+	<LOG_PROGECT_MAP_CREATED><![CDATA[Первичное сканирование завершено, элементов для анализа: <b>%1</b>]]></LOG_PROGECT_MAP_CREATED>
+	<LOG_RECTANGLE_MASK><![CDATA[Найдена <b>прямоугольная маска</b><br>%1]]></LOG_RECTANGLE_MASK>
+	<LOG_EMPTY_LAYER><![CDATA[Найден <b>пустой слой</b><br>%1]]></LOG_EMPTY_LAYER>
+	<LOG_UNUSED_MASK><![CDATA[Найдена <b>неиспользованная маска</b><br>%1]]></LOG_UNUSED_MASK>
+	<LOG_UNUSED_AS><![CDATA[Найден <b>неиспользуемый код</b><br>%1]]></LOG_UNUSED_AS>
+	<LOG_DUP_INSTANCE_NAME><![CDATA[Найден элемент с <b>Instance Name</b> как у элемента<br>%1]]></LOG_DUP_INSTANCE_NAME>
+	<LOG_UNUSED_KEYFRAME><![CDATA[Найден <b>неиспользуемый ключевой кадр</b><br>%1]]></LOG_UNUSED_KEYFRAME>
+	<LOG_NOT_ONE_SCENE><![CDATA[Проект содержит более одного <b>монтажного кадра (Scene)</b>]]></LOG_NOT_ONE_SCENE>
+	<LOG_AS_OR_LABEL><![CDATA[Найден <b>ActionScript код</b> или <b>метка кадра</b>, которые расположены не на соответствующих отдельных слоях<br>%1]]></LOG_AS_OR_LABEL>
+	<LOG_UNUSED_TWEEN><![CDATA[Найден <b>неиспользуемый Tween</b><br>%1]]></LOG_UNUSED_TWEEN>
+	<LOG_RESERVED_NAME_IN_INSTANCE><![CDATA[Найдено <b>зарезервированное слово</b> в Instance Name'е элемента<br>%1]]></LOG_RESERVED_NAME_IN_INSTANCE>
+	<LOG_DYNAMIC_TEXT_UNUSED><![CDATA[Найдено <b>динамическое</b> текстовое поле без <b>Instance Name</b><br>%1]]></LOG_DYNAMIC_TEXT_UNUSED>
+	<LOG_TEXT_FIELD_EMPTY><![CDATA[Найдено <b>неиспользуемое</b> текстовое поле<br>%1]]></LOG_TEXT_FIELD_EMPTY>
+	<LOG_GRAPHIC_FOUND><![CDATA[В библиотеке найден <b>Graphic</b> элемент <b>"%1"</b>]]></LOG_GRAPHIC_FOUND>
+	<LOG_BLUR_NOT_POWER_OF2><![CDATA[Найден элемент с <b>фильтром</b>, у которого значение <b>blurX</b> или <b>blurY</b> не является <b>степенью числа 2</b><br>%1]]></LOG_BLUR_NOT_POWER_OF2>
+	
+	<HINT_BLEND_MODE><![CDATA[Blending негативно сказывается на общей производительности. Постарайтесь избегать использования Blending, заменяя эффекты на заранее подготовленные изображения, если это возможно.]]></HINT_BLEND_MODE>
+	<HINT_CACHED_WITH_TRANSFORM><![CDATA[Изменение свойств <b><u>Transform</u></b> (кроме x,y) на анимированном элементе с примененным(ми) <b><u>фильтром(ами)</u></b> или <b><u>Cache as Bitmap</u></b> (также относится к вложенными элементам) заставляет Flash Player кэшировать элемент каждый ключевой кадр анимации, вызывая излишнее потребление ресурсов]]></HINT_CACHED_WITH_TRANSFORM>
+	<HINT_CACHED_WITH_COLOR_EFFECT><![CDATA[Изменение свойств <b><u>Color Effect</u></b> на анимированном элементе с примененным(ми) <b><u>фильтром(ами)</u></b> или <b><u>Cache as Bitmap</u></b> заставляет Flash Player кэшировать элемент каждый ключевой кадр анимации, вызывая излишнее потребление ресурсов]]></HINT_CACHED_WITH_COLOR_EFFECT>
+	<HINT_FILTER_CHANGING><![CDATA[Изменение свойств <b><u>фильтра(ов)</u></b> на анимированном элементе заставляет Flash Player кэшировать элемент каждый ключевой кадр анимации, вызывая излишнее потребление ресурсов]]></HINT_FILTER_CHANGING>
+	<HINT_CACHED_ANIMATION><![CDATA[Использование <b><u>Cache as Bitmap</u></b> или <b><u>фильтра(ов)</u></b> на элементах с вложенной анимацией заставляет Flash Player кэшировать элемент каждый ключевой кадр анимации, вызывая излишнее потребление ресурсов]]></HINT_CACHED_ANIMATION>
+	<HINT_EXPORTED_ANIMATION><![CDATA[Использование <b><u>Export as Bitmap</u></b> на элементах с вложенной анимацией портит анимацию, т.к. экспортируется только первый кадр]]></HINT_EXPORTED_ANIMATION>
+	<HINT_BITMAP_FILLED_SHAPES><![CDATA[Будьте осторожны с заливкой Shape'ов изображениями. При использовании небольшой части оригинального изображения, в SWF оно вкомпилируется целиком]]></HINT_BITMAP_FILLED_SHAPES>
+	<HINT_WARNINGS_MODE><![CDATA[Отключайте <b>Warnings mode</b> в "Publish Settings -> ActionScript Settings" для значительного снижения времени компиляции проекта (чем больше кода в проекте, тем более значительным будет выигрыш по времени). Однако, будьте осторожны, т.к. при этом Вы теряете иногда полезные предупреждения. Вам не стоит беспокоиться об их потере, если Вы пользуетесь одной из внешних мощных IDE для написания кода, у которых, как правило, есть свой встроенный механизм предупреждений и подсказок]]></HINT_WARNINGS_MODE>
+	<HINT_COMPRESSION_PUBLISH><![CDATA[Включайте <b>Compress movie</b> в "Publish Settings" для уменьшения размера конечного swf]]></HINT_COMPRESSION_PUBLISH>
+	<HINT_XMP_PUBLISH><![CDATA[Выключайте <b>Include XMP metadata</b> в "Publish Settings" для незначительного уменьшения размера конечного swf, если Вы не используете XMP метаданные]]></HINT_XMP_PUBLISH>
+	<HINT_SYSTEM_FONT><![CDATA[Старайтесь не использовать такие системные шрифты, как <b>"_sans"</b>, <b>"_serif"</b>, <b>"_typewriter"</b>, т.к. при проигрывании Вашего SWF, Flash Player может выбрать системный шрифт, который будет визуально отличаться, в зависимости от операционной системы]]></HINT_SYSTEM_FONT>
+	<HINT_MASKED_BITMAP><![CDATA[Старайтесь не использовать маски для изображений. Подготавливайте изображения заранее внешними средствами, либо используйте для MovieClip'ов с вложенными изображениями под масками пункт контекстного меню "Convert to Bitmap" в Flash Pro CS5.5 или выше]]></HINT_MASKED_BITMAP>
+	<HINT_SHAPE_WITH_STROKE><![CDATA[Для повышения производительности, откажитесь от использования линий-обводок (strokes) - они просчитываются в два раза дольше, чем простые заливки. Заменяйте обводки на заливки с помощью Modify->Shape->Convert Lines to Fills]]></HINT_SHAPE_WITH_STROKE>
+	<HINT_RECTANGLE_MASK><![CDATA[Старайтесь вместо обычных <b>прямоугольных масок</b> использовать свойство <b>DisplayObject.scrollRect</b>, если это возможно]]></HINT_RECTANGLE_MASK>
+	<HINT_NOT_ONE_SCENE><![CDATA[Старайтесь не использовать в проекте более одного <b>монтажного кадра (Scene)</b> - используйте MovieClip как альтернативу, иначе могут возникнуть сложности с дальнейшей поддержкой и сопровождением проекта, особенно, сторонними разработчиками]]></HINT_NOT_ONE_SCENE>
+	<HINT_AS_OR_LABEL><![CDATA[Размещайте <b>ActionScrip код</b> и <b>метки кадров</b> на соответствующих отдельных слоях (например, as и labels) - это упростит навигацию по проекту, а так же оградит от возможного случайного удаления кода или метки]]></HINT_AS_OR_LABEL>
+	<HINT_DYNAMIC_TEXT_UNUSED><![CDATA[Используйте <b>динамические</b> текстовые поля, только если собираетесь работать с ними из кода, иначе - используйте <b>статические</b> поля]]></HINT_DYNAMIC_TEXT_UNUSED>
+	<HINT_GRAPHIC_FOUND><![CDATA[Старайтесь очень осторожно использовать <b>Graphic</b> элементы, или не использовать вовсе - они не пригодны для программирования и иного внешнего воздействия]]></HINT_GRAPHIC_FOUND>
+	<HINT_LOG_BLUR_NOT_POWER_OF2><![CDATA[Используйте <b>blurX</b> и <b>blurY</b> равными <b>степени 2</b> (2,4,8, и т.д.) в <b>фильтрах</b>. Это может повысить их быстродействия до 20%-30%]]></HINT_LOG_BLUR_NOT_POWER_OF2>
+	
+	<!--GUI-->
+	
+	<GUI_XFL_PATH><![CDATA[Путь до XFL:]]></GUI_XFL_PATH>
+	<GUI_FLASH_PRO_PATH><![CDATA[Путь до Adobe Flash Professional:]]></GUI_FLASH_PRO_PATH>
+	<GUI_BROWSE><![CDATA[Обзор...]]></GUI_BROWSE>
+	<GUI_SCAN_OPTIONS><![CDATA[Настройки сканирования:]]></GUI_SCAN_OPTIONS>
+	<GUI_PUBLISH_SETTINGS><![CDATA[Publish Settings]]></GUI_PUBLISH_SETTINGS>
+	<GUI_FONTS_EMBED><![CDATA[Шрифты]]></GUI_FONTS_EMBED>
+	<GUI_COMMON><![CDATA[Общее]]></GUI_COMMON>
+	<GUI_PERFORMANCE><![CDATA[Производительность]]></GUI_PERFORMANCE>
+	<GUI_ELEGANCY><![CDATA[Опрятность]]></GUI_ELEGANCY>
+	<GUI_START_SCAN><![CDATA[Начать сканирование]]></GUI_START_SCAN>
+	<GUI_LOG_TO_CLIP><![CDATA[Скопировать Лог]]></GUI_LOG_TO_CLIP>
+	<GUI_QUAITY><![CDATA[Качество JPEG:]]></GUI_QUAITY>
+	<GUI_CUSTOM><![CDATA[Настраиваемое]]></GUI_CUSTOM>
+	<GUI_CURRENT_QUALITY><![CDATA[Текущее качество:]]></GUI_CURRENT_QUALITY>
+	<GUI_YES><![CDATA[Да]]></GUI_YES>
+	<GUI_NO><![CDATA[Нет]]></GUI_NO>
+	<GUI_SKIP_WITH_CUSTOM_QUAL><![CDATA[Пропускать изображения\nс пользовательским\nкачеством сжатия JPEG]]></GUI_SKIP_WITH_CUSTOM_QUAL>
+	<GUI_START><![CDATA[Запуск]]></GUI_START>
+	<GUI_STOP><![CDATA[Стоп]]></GUI_STOP>
+	<GUI_THIRD_PARTY><![CDATA[Спасибо Вам за интерес к XFLTool! В случае обнаружения проблем или ошибок или при наличии предложений и советов - не стесняйтесь, присылайте все <u><a href="http://blog.codestage.ru/ru/contacts/">мне</a></u>, буду признателен.<br><br>Сторонние библиотеки и код, которые были очень полезны при разработке - они могут сделать и Вашу жизнь легче (a-z):<br>]]></GUI_THIRD_PARTY>
+	<GUI_DISCLAIMER>
+		<![CDATA[<b>Disclaimer</b><br>Используя данное ПО, Вы должны понимать, что делаете это на свой страх и риск. Производитель не несет ответственности за любую потерю или порчу данных в результате использования данного ПО.]]>
+	</GUI_DISCLAIMER>
+	<GUI_COLORS_LEGEND><![CDATA[Легенда:]]></GUI_COLORS_LEGEND>
+	<GUI_COLORS_TITLE><![CDATA[заголовок]]></GUI_COLORS_TITLE>
+	<GUI_COLORS_COMMENT><![CDATA[заметка]]></GUI_COLORS_COMMENT>
+	<GUI_COLORS_HINT><![CDATA[подсказка]]></GUI_COLORS_HINT>
+	<GUI_COLORS_FONTS><![CDATA[шрифты]]></GUI_COLORS_FONTS>
+	<GUI_COLORS_COMMON><![CDATA[общее]]></GUI_COLORS_COMMON>
+	<GUI_COLORS_ELEGANCY><![CDATA[опрятность]]></GUI_COLORS_ELEGANCY>
+	<GUI_COLORS_PERFORMANCE><![CDATA[производительность]]></GUI_COLORS_PERFORMANCE>
+	<GUI_WARNING><![CDATA[Внимание!]]></GUI_WARNING>
+	<GUI_PAGE_ISSUES><![CDATA[Проблемы и подсказки]]></GUI_PAGE_ISSUES>
+	<GUI_PAGE_BITMAPS><![CDATA[Анализ сжатия изображений]]></GUI_PAGE_BITMAPS>
+	<GUI_PAGE_OPTIONS><![CDATA[Опции]]></GUI_PAGE_OPTIONS>
+	<GUI_PAGE_HISTORY><![CDATA[История версий]]></GUI_PAGE_HISTORY>
+	<GUI_PAGE_ABOUT><![CDATA[О программе]]></GUI_PAGE_ABOUT>
+	<GUI_WELCOME_TEXT>
+		<![CDATA[Спасибо Вам за интерес к XFLTool! В случае обнаружения проблем или ошибок или при наличии предложений и советов - не стесняйтесь, присылайте все <u><a href="http://blog.codestage.ru/contacts/">мне</a></u>, буду признателен.]]>
+	</GUI_WELCOME_TEXT>
+	<GUI_WELCOME_TITLE><![CDATA[Добро пожаловать!]]></GUI_WELCOME_TITLE>
+	<GUI_BROWSE_XFL_TITLE><![CDATA[Выберите XFL проект]]></GUI_BROWSE_XFL_TITLE>
+	<GUI_BROWSE_FLASH_PRO_TITLE><![CDATA[Выберите Adobe Flash Professional]]></GUI_BROWSE_FLASH_PRO_TITLE>
+	<GUI_COMPRESSION_WARNING>
+		<![CDATA[Вы собираетесь запустить анализ сжатия изображений <b>без внесения изменений</b> в проект. Результаты анализа не претендуют на высокий уровень точности и могут в некоторых случаях быть неправильными. Удостоверьтесь, что путь до <b>Adobe Flash Professional</b> на странице <b>Опции</b> указан верно, а так же, что нет открытых и несохраненных проектов в Adobe Flash Professional!<br><b>Строго рекомендуется проводить ревизию изображений в библиотеке "вручную", прямо во Flash Pro, для достижения наилучших результатов!</b><br>Итак, Вы готовы продолжить?]]>
+	</GUI_COMPRESSION_WARNING>
+	<GUI_WRONG_FLA_FORMAT_WARNING>
+		<![CDATA[Простите, но файл <b>"%1"</b> не является сжатым XFL проектом (это FLA проект, созданный в CS4 или более ранней версии Adobe Flash Professional). Пожалуйста, сконвертируйте его в XFL проект (сохраните его в формате CS5 или в Uncompressed CS4 проект) и попробуйте снова.]]>
+	</GUI_WRONG_FLA_FORMAT_WARNING>
+	<GUI_SUPPORTED_PROJECT_TYPES><![CDATA[Поддерживаемые типы проектов]]></GUI_SUPPORTED_PROJECT_TYPES>
+	<GUI_XFL_PROJECT><![CDATA[Несжатый XFL Проект]]></GUI_XFL_PROJECT>
+	<GUI_FLA_PROJECT><![CDATA[Сжатый XFL Проект (FLA, CS5+)]]></GUI_FLA_PROJECT>
+	<GUI_EXECUTABLE><![CDATA[Приложение]]></GUI_EXECUTABLE>
+	<GUI_APPLICATION><![CDATA[Программа]]></GUI_APPLICATION>
+	<GUI_COMPRESSED_XFL_WARNING>
+		<![CDATA[Для внесения изменений в проект, необходимо сохранить сжатый XFL проект (FLA) в разжатом виде. Хотите ли вы указать место для сохранения проекта в разжатом виде и продолжить?]]>
+	</GUI_COMPRESSED_XFL_WARNING>
+	<GUI_NEW_VERSION><![CDATA[Доступна новая версия: %1]]></GUI_NEW_VERSION>
+	<GUI_ASK_FOR_UPDATE><![CDATA[Желаете ли Вы обновить текущую версию?]]></GUI_ASK_FOR_UPDATE>
+	<GUI_PROGRESS_LABEL><![CDATA[Загрузка обновления:]]></GUI_PROGRESS_LABEL>
+	<GUI_THE_MINER_OFF><![CDATA[используйте купон "<b>letsFocusOnMining</b>" для 10% скидки на Pro версию]]></GUI_THE_MINER_OFF>
+	
+</language>

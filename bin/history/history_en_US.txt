@@ -1,0 +1,62 @@
+XFLTool Changelog
+========================================================
+0.0.4 alpha [01/15/12]
+- issues and hints:
+  - module was rewrited from scratch
+  - added two new issues types - performance and elegancy
+  - improved continuous frame-by-frame issues output
+  - added new search rules:
+	- timelines with different layers length detection
+	- Shapes with outlines detection
+	- regular rectangle masks lookup
+	- empty layers detection
+	- unused masks detection
+	- unused ActionScript detection
+	- unused keyframes detection
+	- unused tweens detection
+	- reserved words as Instance Names detection
+	- using more then one Scene lookup
+	- as and frame labels on the not empty layers detection
+	- unused TextFileds search
+	- incorrectly choosed type of the TextFields search
+	- search for Graphic items in the Library
+
+- bitmaps compression analysis:
+  - stripped everything able to change the project - now this module is for analysis only
+  
+- fixed some UI and logic issues in different modules
+- logs are native-text based only for the sake of performance and usability
+- Options page added
+- Path to the Flash Pro selection added
+- update preocess changed
+--------------------------------------------------------
+
+0.0.3 alpha
+- issues scan:
+  - scan speed increased
+  - fixed animation detection
+  - output for the Bitmaps filled Shapes changed - now logs Bitmap with shapes list
+  - fixed crash if tween ends on item different from which tween was started
+  - now log contains the "to frame" value for the "animated" issues
+  - now in some cases export for ActionScript is checked
+  - masked Bitmaps detection
+  - single keyframe tween detection
+- another minor improvements
+--------------------------------------------------------
+
+0.0.2 alpha
+- issues scan: shape filled with bitmap report says 'filled with a bitmap: "%1"' - fixed
+- issues scan: fixed log message for the fonts without embedded chars
+- issues scan: added system fonts checking (_sans,_serif,_typewriter)
+- issues scan: fixed duplicate log messages with nested animation issues
+- bitmaps batch: added check for the Bitmaps existence
+- fixed extra xfl path checks
+- now you could target the xfl or fla (CS5+) files directly instead of folder with xfl file
+- drag & drop (you could drag-drop xfl file, folder with xfl file, fla file)
+- added Changelog page
+- font changed and antiAliasing enabled
+- another minor changes
+--------------------------------------------------------
+
+0.0.1 alpha
+- first public release

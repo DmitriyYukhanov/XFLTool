@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update xmlns="http://ns.riaspace.com/air/framework/update/description/1.1">
+	
+    <!-- Mac update -->
+    <dmg>
+		<version>0.0.4</version>
+        <url>http://codestage.ru/files/xfltool/XFLTool.dmg</url>
+    </dmg>
+    
+    <!-- Win update -->
+    <exe>
+        <version>0.0.4</version>
+        <url>http://codestage.ru/files/xfltool/XFLTool.exe</url>
+    </exe>
+	
+	<description>
+		<en>
+			<![CDATA[0.0.4 alpha
+- issues and hints:
+  - module was rewrited from scratch
+  - added two new issues types - performance and elegancy
+  - improved continuous frame-by-frame issues output
+  - added new search rules:
+	- timelines with different layers length detection
+	- Shapes with outlines detection
+	- regular rectangle masks lookup
+	- empty layers detection
+	- unused masks detection
+	- unused ActionScript detection
+	- unused keyframes detection
+	- unused tweens detection
+	- reserved words as Instance Names detection
+	- using more then one Scene lookup
+	- as and frame labels on the not empty layers detection
+	- unused TextFileds search
+	- incorrectly choosed type of the TextFields search
+	- search for Graphic items in the Library
+
+- bitmaps compression analysis:
+  - stripped everything able to change the project - now this module is for analysis only
+  
+- fixed some UI and logic issues in different modules
+- logs are native-text based only for the sake of performance and usability
+- Options page added
+- Path to the Flash Pro selection added
+- update preocess changed
+	 ]]></en>
+		<ru>
+			<![CDATA[0.0.4 alpha
+- проблемы и подсказки:
+  - модуль полностью переписан
+  - введены новые типы проблем - производительность и опрятность
+  - улучшен вывод непрерывно повторяющихся из кадра в кадр проблем
+  - добавлен ряд новых правил поиска проблем:
+	- поиск временных шкал со слоями разной длины
+	- поиск Shape'ов с внешней обводкой
+	- поиск классических прямоугольных масок
+	- поиск пустых слоёв
+	- поиск неиспользованных маск
+	- поиск неиспользуемого кода
+	- поиск неиспользуемых ключевых кадров
+	- поиск неиспользованных tween'ов
+	- определение использования зарезервированных слов в качестве Instance Name'ов
+	- определение использования нескольких монтажных каров (сцен)
+	- поиск кода и меток не на пустых слоях
+	- поиск неиспользуемых текстовых полей
+	- поиск неверно выбранного типа текстовых полей
+	- поиск в библиотеке элементов Graphic
+	- поиск применённых фильтров с blurX или blurY не являющимися степенью 2
+  
+- анализ сжатия изображений:
+  - вырезано всё, что могло вносить изменения в проект - теперь этот модуль служит только для анализа
+  
+- исправлены различные проблемы в UI и логические ошибки
+- журналы событий теперь полностью текстовые - в угоду производительности и удобству
+- добавлена страница Опции
+- добвлена возможность выбора пути до Flash Pro
+- изменён механизм обновлений
+	 ]]></ru>
+	</description> 
+</update>
